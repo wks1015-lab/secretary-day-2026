@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Georgia", "Times New Roman", serif;
+  --font-sans: "Inter", "Microsoft JhengHei", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#f8f5f2] text-[#4a4542] font-serif antialiased;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
